@@ -54,15 +54,15 @@ namespace UserAuthApp
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: System.Configuration.ConfigurationManager.AppSettings["AppID"],
+               appSecret: System.Configuration.ConfigurationManager.AppSettings["AppSecret"]);
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = System.Configuration.ConfigurationManager.AppSettings["ClientID"],
+                ClientSecret = System.Configuration.ConfigurationManager.AppSettings["ClientSecret"]
+            });
         }
     }
 }
