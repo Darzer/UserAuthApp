@@ -31,7 +31,7 @@ namespace UserAuthApp
             var myMessage = new SendGridMessage();
             myMessage.AddTo(message.Destination);
             myMessage.From = new System.Net.Mail.MailAddress(
-                                "x00090469@ittd.ie", "Darren R.");
+                                "X00090469@Ittd.ie", "Darren R.");
             myMessage.Subject = message.Subject;
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
