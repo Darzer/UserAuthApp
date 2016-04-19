@@ -25,6 +25,8 @@ namespace UserAuthApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-social.css",
+                      "~/Content/css/font-awesome.css",
                       "~/Content/site.css"));
         }
     }
