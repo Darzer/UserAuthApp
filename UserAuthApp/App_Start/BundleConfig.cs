@@ -23,10 +23,10 @@ namespace UserAuthApp
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css/uaa").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap-social.css",
-                      "~/Content/mycss/font-awesome.css",
+                      "~/Content/css/font-awesome.css",
                       "~/Content/site.css"));
         }
     }
